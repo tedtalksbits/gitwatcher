@@ -35,8 +35,42 @@ A Bash script to check for changes in branches of a Git repository, allowing the
 
 You can also download the script directly from the repository:
 
+> You can change the directory to any directory you want to download the script to.
+
 ```bash
-curl -O https://raw.githubusercontent.com/alyssalew/git-branch-checker/main/gitwatcher.sh
+# create a directory to store the script
+mkdir -p ~/.local/bin/gitwatcher
+
+cd ~/.local/bin/gitwatcher
+
+# download the script
+curl -O  https://raw.githubusercontent.com/tedtalksbits/gitwatcher/main/gitwatcher.sh
+```
+
+## Add to Path
+
+You can add the script to your PATH to run it from any location.
+
+> here's how to: add to path, add alias, run on terminal startup
+
+1.  update ~/.bashrc
+
+```bash
+# add to path
+export PATH=$PATH:~/.local/bin/gitwatcher
+
+# add alias
+alias gitwatcher='~/.local/bin/gitwatcher/gitwatcher.sh'
+
+# run on terminal startup
+gitwatcher ~/path/to/git/repo
+
+```
+
+2.  reload bashrc
+
+```bash
+source ~/.bashrc
 ```
 
 ## Usage
