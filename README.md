@@ -31,6 +31,14 @@ A Bash script to check for changes in branches of a Git repository, allowing the
    chmod +x gitwatcher.sh
    ```
 
+## Download
+
+You can also download the script directly from the repository:
+
+```bash
+curl -O https://raw.githubusercontent.com/alyssalew/git-branch-checker/main/gitwatcher.sh
+```
+
 ## Usage
 
 To run the script, use the following syntax:
